@@ -51,6 +51,11 @@ html{
 
 }
 
+section{
+    padding: 5rem 9%;
+
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -103,6 +108,23 @@ html{
 
     }
 }
+// HOME SECTION STARTS
+.home{
+    padding: 0;
+
+    .box{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover !important;
+        background-position: center !important;
+
+        justify-content: flex-end;
+    }
+}
+// HOME SECTION ENDS
+
+
 
 
 
@@ -128,6 +150,11 @@ html{
 @media(max-width:1200px){
     .header{
         padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    
     }
 }
 

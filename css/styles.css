@@ -42,6 +42,10 @@ html::-webkit-scrollbar-thumb:hover {
   background-color: var(--greenSecondary);
 }
 
+section {
+  padding: 5rem 9%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -99,9 +103,31 @@ html::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
+.home {
+  padding: 0;
+}
+
+.home .box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 

@@ -46,6 +46,10 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- font awesome -->
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <!-- swiper js -->
     <!-- css file -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- css file -->
@@ -74,47 +78,51 @@
 
     <!-- HOME SECTION STARTS -->
     <section class="home" id="home">
-        <div class="home-slider">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="box" style="background: url(images/inicio.jpg) no-repeat;">
                         <div class="content">
                             <span>Cualquier proyecto</span>
                             <h3>es posible</h3>
                             <p>Nuestra finalidad es plantear soluciones y
                                 ejecutar estrategias de comunicación.</p>
-                            <a href="ADN-MARKETING DIGITAL-BRIEFING-2021.pdf" download="" class="btn"><i class="fas fa-download"></i>descargar brochure</a>
+                            <a href="ADN-MARKETING DIGITAL-BRIEFING-2021.pdf" download="" class="btn">descargar brochure<i class="fas fa-download"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="slide">
-                    <div class="box" style="background: url(images/btl-activaciones.jpg) no-repeat;">
-                        <div class="content">
-                            <span>Creamos experiencias de</span>
-                            <h3>ALTO IMPACTO</h3>
-                            <p>Nuestra finalidad es plantear soluciones y
-                                ejecutar estrategias de comunicación.</p>
-                            <a href="#services" class="btn"><i class="fas fa-arrow-right"></i>ir a servicios</a>
-                        </div>
-                    </div>
-                </div>
+                
 
-                <div class="slide">
-                    <div class="box" style="background: url(images/eventos-corporativos.jpg) no-repeat;">
-                        <div class="content">
+                <div class="swiper-slide">
+                    <div class="box second" style="background:  url(images/eventos-corporativos.jpg) no-repeat;">
+                        <div class="content second-content">
                             <span>creamos
-                                espacios y atmósferas</span>
+                                atmósferas</span>
                             <h3>que generan
                                 experiencias</h3>
                             <p>Brindamos alternativas para crear
                                 espacios y atmósferas que generen
                                 experiencias a través de eventos que se interioricen con el público objetivo.</p>
-                                <a href="#contact" class="btn"><i class="fas fa-arrow-right"></i>hablemos</a>
+                                <a href="#contact" class="btn">hablemos<i class="fas fa-arrow-right slider-icon1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/btl-activaciones.jpg) no-repeat;">
+                        <div class="content content-left">
+                            <span>Creamos experiencias de</span>
+                            <h3 class="third-content">ALTO IMPACTO</h3>
+                            <p>Nuestra finalidad es plantear soluciones y
+                                ejecutar estrategias de comunicación.</p>
+                            <a href="#services" class="btn">ir a servicios<i class="fas fa-arrow-right slider-icon1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
     <!-- HOME SECTION ENDS -->
@@ -138,7 +146,11 @@
 
 
 
-    
+
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
     <!-- js file -->
     <script src="js/main.js"></script>
     <!-- js file -->

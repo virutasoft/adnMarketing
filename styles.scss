@@ -7,7 +7,7 @@
     --greenSecondary:#C0DFCB;
     --red:#FF6A5C;
     --white:#fff;
-    --border: 2rem solid var(--green);
+    --border: .2rem solid var(--white);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 
 }
@@ -54,6 +54,31 @@ html{
 section{
     padding: 5rem 9%;
 
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border:  var(--border);
+    color: var(--white);
+    cursor: pointer;
+    background: var(--black);
+    border-radius: 10rem;
+    font-size: 1.7rem;
+    padding: 1.5rem;
+
+    i{
+        padding-left: 1.5rem;
+    }
+    &:hover .slider-icon1{
+        transform: translateX(.45rem);
+    }
+    &:hover{
+        
+        background: var(--red);
+        color: var(--white);
+        // padding-left: 2rem;
+    }
 }
 
 .header{
@@ -120,7 +145,54 @@ section{
         background-position: center !important;
 
         justify-content: flex-end;
+        padding: 2rem 9%;
+
+        &.second{
+            justify-content: flex-start;
+
+        }
+
+        .content{
+            width: 50rem;
+
+            &.second-content{
+                color: var(--white);
+                
+            }
+
+
+            span{
+                font-size: 4rem;
+                color: var(--white);
+            }
+            h3{
+                font-size: 6rem;
+                color: var(--green);
+                padding-top: .5rem;
+                text-transform: uppercase;
+            }
+
+            p{
+                line-height: 2;
+                color: var(--white);
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+            &.third-content{
+                color: var(--black);
+            }
+        }
+
     }
+}
+.home .box .content .third-content{
+    color: var(--black);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 3rem;
+    color: var(--white);
 }
 // HOME SECTION ENDS
 
@@ -165,6 +237,36 @@ section{
         font-size: 55%;
 
     }
+
+
+    .home .box{
+        padding: 2rem;
+        justify-content: center;
+        background-position: right !important;
+        &:second{
+            justify-content: center;
+            background-position: left !important;
+        }
+
+        .content{
+            text-align: center;
+            span{
+                font-size: 3rem;
+
+            }
+
+            h3{
+                font-size: 4rem;
+            }
+        }
+        
+    }
+    .home .box .content-left{
+        
+            margin-left: 50%;
+            // justify-content: flex-end;
+            background-position: right !important;
+    }
 }
 
 @media(max-width:768px){
@@ -206,6 +308,11 @@ section{
             }
         }
     }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+    display: none;
+}
 }
 
 
@@ -213,6 +320,12 @@ section{
     html{
         font-size: 50%;
 
+    }
+    .home .box .content-left{
+        
+        margin-left: 0;
+        // justify-content: flex-end;
+        background-position: right !important;
     }
 }
 

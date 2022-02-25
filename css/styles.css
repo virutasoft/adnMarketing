@@ -85,6 +85,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: var(--white);
+}
+
+.header.active {
+  background: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .header .logo {
@@ -127,6 +134,37 @@ section {
 
 .header #menu-btn {
   display: none;
+}
+
+.heading {
+  margin: 2rem;
+  padding-top: 6rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: var(--black);
+  position: relative;
+  letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after {
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top: 0.4rem solid var(--red);
+  border-left: 0.4rem solid var(--red);
+}
+
+.heading::before {
+  top: 5.8rem;
+  left: -2rem;
+}
+
+.heading::after {
+  bottom: -.5rem;
+  right: -2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .home {
@@ -194,6 +232,46 @@ section {
 .swiper-button-prev::after {
   font-size: 3rem;
   color: var(--white);
+}
+
+.about {
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 4rem;
+}
+
+.about .row .content-2 {
+  text-align: left;
+}
+
+.about .row .content-2 h3 {
+  font-size: 3rem;
+  color: var(--green);
+}
+
+.about .row .content-2 p {
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+  text-transform: none;
+}
+
+.about .row .image img {
+  width: 40vw;
 }
 
 @media (max-width: 1200px) {
@@ -282,6 +360,16 @@ section {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
+  }
+  .about .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    padding: 0 2rem;
+  }
+  .about .row .image img {
+    width: 100vw;
   }
 }
 

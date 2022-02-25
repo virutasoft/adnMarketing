@@ -90,6 +90,12 @@ section{
     z-index: 1000;
     display: flex;
     align-items: center;
+    background: var(--white);
+
+    &.active{
+        background: var(--white);
+        box-shadow: var(--box-shadow);
+    }
 
     .logo{
         margin-right: auto;
@@ -131,6 +137,33 @@ section{
     #menu-btn{
         display: none;
 
+    }
+}
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--black);
+    position: relative;
+    letter-spacing: .2rem;
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        height: 2.5rem;width: 2.5rem;
+        border-top: .4rem solid var(--red);
+        border-left: .4rem solid var(--red);
+    }
+    &::before{
+        top: 5.8rem;
+        left: -2rem;
+
+    }
+    &::after{
+        bottom: -.5rem;
+        right: -2rem;
+        transform: rotate(180deg);
     }
 }
 // HOME SECTION STARTS
@@ -196,7 +229,44 @@ section{
 }
 // HOME SECTION ENDS
 
+// ABOUT SECTION STARTS
+.about{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 4rem;
+
+        .content-2{
+            text-align: left;
+
+            h3{
+                font-size: 3rem;
+                color: var(--green);
+            }
+            p{
+                font-size: 1.5rem;
+                color: var(--black);
+                padding: 1rem 0;
+                text-transform: none;
+            }
+        }
+        .image img{
+            width: 40vw;
+        }
+    }
+}
+
+
+
+
+// ABOUT SECTION ENDS
 
 
 
@@ -312,7 +382,15 @@ section{
     .swiper-button-next::after,
     .swiper-button-prev::after{
     display: none;
-}
+    }
+
+    .about .row{
+        flex-flow: column-reverse;
+        padding: 0 2rem;
+         .image img{
+             width: 100vw;
+         }
+    }
 }
 
 

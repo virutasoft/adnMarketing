@@ -11,26 +11,26 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 };
 
-// // menu bar
-// window.onscroll = () =>{
-//   navbar.classList.remove('.active');
+// menu bar
+window.onscroll = () =>{
+  navbar.classList.remove('.active');
 
-//   if(window.scrollY > 0){
-//     document.querySelector('.header').classList.add('active');
-//   }else{
-//     document.querySelector('.header').classList.remove('active');
-//   }
-// };
+  if(window.scrollY > 0){
+    document.querySelector('.header').classList.add('active');
+  }else{
+    document.querySelector('.header').classList.remove('active');
+  }
+};
 
-// window.onload = () =>{
+window.onload = () =>{
   
-//   if(window.scrollY > 0){
-//     document.querySelector('.header').classList.add('active');
-//   }else{
-//     document.querySelector('.header').classList.remove('active');
-//   }
-// };
-// // menu bar
+  if(window.scrollY > 0){
+    document.querySelector('.header').classList.add('active');
+  }else{
+    document.querySelector('.header').classList.remove('active');
+  }
+};
+// menu bar
 
 var swiper = new Swiper(".home-slider", {
     loop:true,

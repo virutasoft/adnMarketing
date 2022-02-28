@@ -289,9 +289,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background: #02c8a7;
-  background: -webkit-gradient(linear, left top, right top, from(#02c8a7), to(#c0dfcb));
-  background: linear-gradient(90deg, #02c8a7 0%, #c0dfcb 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02c8a7",endColorstr="#c0dfcb",GradientType=1);
+  background: linear-gradient(153deg, #02c8a7 0%, #9dc898 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02c8a7",endColorstr="#9dc898",GradientType=1);
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -438,6 +437,7 @@ section {
       justify-content: space-around;
   padding: 0 4rem;
   z-index: 100;
+  padding-top: 10rem;
 }
 
 .services .row .content-2 {
@@ -503,6 +503,13 @@ section {
 .services .row .services__activaciones .boxes-container .box img h3.service__description-text {
   font-size: 3rem;
   color: var(--white);
+}
+
+.services .row__events {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 @media (max-width: 1200px) {

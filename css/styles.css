@@ -263,7 +263,7 @@ section {
 }
 
 .about .row .content-2 h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--green);
 }
 
@@ -297,8 +297,8 @@ section {
 }
 
 .services__main .heading {
-  color: var(--white);
-  -webkit-text-stroke: 0.1rem var(--white);
+  color: var(--black);
+  -webkit-text-stroke: 0.1rem var(--black);
 }
 
 .services__main .container__services__cards {
@@ -446,7 +446,7 @@ section {
 }
 
 .services .row .content-2 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--green);
 }
 
@@ -512,6 +512,32 @@ section {
           flex-flow: row-reverse;
 }
 
+.services .row__internalCommunication .services__activaciones .boxes-container, .services .row__btlPublicity .services__activaciones .boxes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25rem 0 0;
+}
+
+.services .row__internalCommunication .services__activaciones .boxes-container .box, .services .row__btlPublicity .services__activaciones .boxes-container .box {
+  width: 30rem;
+  height: 31rem;
+}
+
+.services .row__internalCommunication .services__activaciones .boxes-container .box img, .services .row__btlPublicity .services__activaciones .boxes-container .box img {
+  width: 25rem;
+}
+
+.services .row__btlPublicity .services__activaciones .boxes-container {
+  padding: 0 0 0 0;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
@@ -525,6 +551,34 @@ section {
         grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    justify-items: center;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box {
+    width: 20rem;
+    height: 21rem;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box img {
+    width: 15rem;
+  }
+  .btlPublicity .row__btlPublicity .services__activaciones .boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0;
+    justify-items: center;
   }
 }
 
@@ -648,6 +702,26 @@ section {
     width: 90vw;
     min-height: 80vh;
   }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box {
+    width: 20rem;
+    height: 21rem;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box img {
+    width: 15rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -697,6 +771,42 @@ section {
   .services .row .services__activaciones .boxes-container .box h3.service__description-text {
     font-size: 1.68rem;
     color: var(--white);
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container, .btlPublicity .row__btlPublicity .services__activaciones .boxes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box, .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box {
+    width: 22rem;
+    height: 23rem;
+  }
+  .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box img, .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box img {
+    width: 17rem;
+  }
+  .btlPublicity .row__btlPublicity .services__activaciones .boxes-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box {
+    padding-top: 4rem;
+    width: 27rem;
+    height: 28rem;
+  }
+  .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box img {
+    width: 22rem;
+  }
+  .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box:last-child {
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

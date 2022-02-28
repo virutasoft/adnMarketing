@@ -171,6 +171,58 @@ section {
           transform: rotate(180deg);
 }
 
+.callToAction {
+  -webkit-clip-path: polygon(0 13%, 100% 39%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 13%, 100% 39%, 100% 100%, 0% 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  background: black;
+  color: var(--white);
+  padding-top: 15rem;
+}
+
+.callToAction .callToAction__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.callToAction .callToAction__container .textContainer h4 {
+  color: var(--green);
+  font-size: 4rem;
+}
+
+.callToAction .callToAction__container .textContainer p {
+  font-size: 1.8rem;
+}
+
+.callToAction .callToAction__container .buttonContainer {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.callToAction .callToAction__container .buttonContainer .btn {
+  width: 50%;
+  text-align: center;
+}
+
 .home {
   padding: 0;
 }

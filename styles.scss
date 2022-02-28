@@ -173,6 +173,50 @@ section{
         transform: rotate(180deg);
     }
 }
+
+.callToAction{
+    clip-path: polygon(0 13%, 100% 39%, 100% 100%, 0% 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    background: black;
+    color: var(--white);
+    padding-top: 15rem;
+
+    .callToAction__container{
+        display: flex;
+        justify-content: space-between;
+        // background: red;
+        overflow: hidden;
+        position: sticky;
+
+
+        .textContainer{
+            h4{
+                color: var(--green);
+                font-size: 4rem;
+                // padding: 2rem;
+
+            }
+            p{
+                font-size: 1.8rem;
+                // padding: 2rem 0;
+            }
+        }
+
+        .buttonContainer{
+            background: #000;
+            display: flex;
+            align-items: flex-end;
+            width: 40%;
+            justify-content: center;
+
+            .btn{
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+}
 // HOME SECTION STARTS
 .home{
     padding: 0;

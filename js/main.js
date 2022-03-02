@@ -11,6 +11,9 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 };
 
+
+
+
 // menu bar
 window.onscroll = () =>{
   navbar.classList.remove('.active');
@@ -32,6 +35,15 @@ window.onload = () =>{
 };
 // menu bar
 
+//  SCROLL TO TOP BUTTON
+if (window.scrollY > 30) {
+  document.querySelector('#scroll-top').classList.add('active');
+
+}else{
+  document.querySelector('#scroll-top').classList.remove('active');
+}
+//  SCROLL TO TOP BUTTON
+
 var swiper = new Swiper(".home-slider", {
     loop:true,
     grabCursor:true,
@@ -46,7 +58,40 @@ var swiper = new Swiper(".home-slider", {
   });
 
 
- //PORTFOLIO
+
+
+// SCROLL REVEAL
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '0px',
+  duration: 1500,
+  delay: 300,
+  reset: true,
+
+});
+
+sr.reveal('.home');
+sr.reveal('.row, .image', {delay: 300, origin:'right'});
+sr.reveal('.headText, .buttonContainer', {delay: 100, origin:'bottom'});
+sr.reveal('.card', {delay: 200, origin:'left'});
+// sr.reveal('.contact', {delay: 150});
+// sr.reveal('.footer', {delay: 700, origin: 'bottom'});
+// SCROLL REVEAL
+
+
+function loader() {
+  document.querySelector('.loader-container').classList.add('fade-out');
+
+}
+function fadeOut() {
+    setInterval(loader, 3000);
+}
+window.onload = fadeOut();
+
+
+
+
+//PORTFOLIO
 //selecting all required elements
 const filterItem = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".gallery .image");

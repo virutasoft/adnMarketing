@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 	}
 
 	if(!$errores){
-		$enviar_a = 'friocentrogsf@hotmail.com';
+		$enviar_a = 'rogletek@gmail.com';
 		$asunto = 'Este correo ha sido enviado desde el sitio web de ADN Marketing digital S.A.S.';
 		$mensaje_preparado = "De: $nombre \n";
 		$mensaje_preparado .= "Correo: $correo \n";

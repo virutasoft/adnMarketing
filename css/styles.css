@@ -418,10 +418,11 @@ section {
   width: 85vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 8rem;
   margin: 0 auto;
+  padding-left: 5rem;
 }
 
 .services__main .container__services__cards .card {
@@ -658,6 +659,10 @@ section {
 
 .services .row__btlPublicity .services__activaciones .boxes-container {
   padding: 0 0 0 0;
+}
+
+.services .row__fair-stands .services__activaciones .boxes-container {
+  padding-left: 10rem;
 }
 
 ::-moz-selection {
@@ -1211,6 +1216,9 @@ section {
   .about .row .image img {
     width: 100vw;
   }
+  .services__main .container__services__cards {
+    padding-left: 0;
+  }
   .services {
     background-position: 50%, 30% !important;
   }
@@ -1422,6 +1430,9 @@ section {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .services__main .container__services__cards {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

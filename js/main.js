@@ -66,7 +66,7 @@ const sr = ScrollReveal({
   distance: '0px',
   duration: 1500,
   delay: 300,
-  reset: true,
+  reset: false,
 
 });
 
@@ -146,3 +146,6 @@ function preview(element){
 }
 
  //PORTFOLIO
+
+//  form
+// form

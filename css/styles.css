@@ -1434,5 +1434,8 @@ section {
   .services__main .container__services__cards {
     padding-left: 0;
   }
+  .fair-stands .row__fair-stands .services__activaciones .boxes-container {
+    padding-left: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

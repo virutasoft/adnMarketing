@@ -149,3 +149,17 @@ function preview(element){
 
 //  form
 // form
+
+// MODAL POLITICS
+const politics = document.querySelector('.politics');
+const okButton = document.querySelector('.ok-btn');
+const popupBox = document.querySelector('.popup-overlay');
+
+politics.addEventListener('click', () => {
+  popupBox.classList.add('active-popup')
+})
+
+okButton.addEventListener('click', () => {
+  popupBox.classList.remove('active-popup')
+})
+// MODAL POLITICS

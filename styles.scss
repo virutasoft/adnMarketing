@@ -20,7 +20,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -336,6 +336,7 @@ section{
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-color: var(--white);
 
     .row{
         display: flex;
@@ -464,7 +465,7 @@ section{
                     padding-top: 2.5rem;
 
                     strong{
-                        color: var(--red);
+                        color: var(--black);
                     }
                 }
             }
@@ -646,6 +647,14 @@ section{
 
 
 // PORTFOLIO SECTION STARTS
+
+.container-gallery-wrapper{
+    background-color: var(--white);
+
+    .heading{
+        text-align: center;
+    }
+}
 ::selection{
     color: #fff;
     background: var(--red);
@@ -913,58 +922,155 @@ section{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
+}
   
-  .footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .footer .box-container .box h3 {
-    font-size: 2rem;
-    padding: 1.5rem 0;
-    color: #fff;
-  }
-  
-  .footer .box-container .box a {
-    display: block;
-    font-size: 1.4rem;
-    color: #fff;
-    padding: 1rem 0;
-  }
-  
-  .footer .box-container .box a i {
-    color: var(--red);
-    padding-right: .5rem;
-  }
-  
-  .footer .box-container .box a:hover {
-    color: var(--green);
-  }
-  
-  .footer .box-container .box a:hover i {
-    padding-right: 2rem;
-  }
-  
-  .footer .credit {
+.footer .box-container {
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+font-size: 2rem;
+padding: 1.5rem 0;
+color: #fff;
+}
+
+.footer .box-container .box a {
+display: block;
+font-size: 1.4rem;
+color: #fff;
+padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+color: var(--red);
+padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+color: var(--green);
+}
+
+.footer .box-container .box a:hover i {
+padding-right: 2rem;
+}
+
+.footer .credit {
+text-align: center;
+margin-top: 2.5rem;
+padding: 1rem;
+padding-top: 2.5rem;
+font-size: 2rem;
+color: #fff;
+}
+
+.footer .credit span {
+color: var(--red);
+}
+
+.footer .credit .love {
+color: deepskyblue;
+}
+
+// MODAL POLITICS STARTS
+.popup-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    transition: 0.5s;
+    z-index: -300000;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    opacity: 0;
+}
+
+.popup-box-container{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--white);
+    width: 50rem;
+    height: 50vh;
     text-align: center;
-    margin-top: 2.5rem;
-    padding: 1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #fff;
-  }
-  
-  .footer .credit span {
-    color: var(--red);
-  }
-  
-  .footer .credit .love {
-    color: deepskyblue;
-  }
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+   
+    border-radius: 5rem;
+    // overflow: auto;
+
+    .icon-container h3{
+
+        text-transform: uppercase;
+        color: var(--red);
+        font-size: 2.1rem;
+        padding: 1.2rem;
+
+        i{
+        
+            // border-radius: 50%;
+            color: var(--black);
+            opacity: 0.6;
+            font-size: 2rem;
+            margin: 1.5rem;
+            padding: 0;
+            // box-shadow: 0 0 .1rem var(--black);
+    
+        }
+    } 
+    
+
+    
+
+    .popup-message-container{
+        width: 50rem;
+        height: 40rem;
+        margin-top: 1rem;
+        color: var(--black);
+        overflow: auto;
+        text-transform: none;
+        text-align: justify;
+        padding: 0 2rem 0 2rem;
+        font-size: 1.3rem;
+        
+
+        &::-webkit-scrollbar{
+            width: .5rem;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color:var(--green);
+        }
+        &::-webkit-scrollbar-thumb:hover{
+            background-color: var(--greenSecondary);
+        }
+        // background: red;
+
+        
+    }
+
+    .ok-btn{
+        margin: 2rem auto 2rem;
+        width: 30%;
+        cursor: pointer;
+
+    }
+}
+
+.active-popup{
+    opacity: 1;
+    z-index: 300000;
+}
+
+
+
+// MODAL POLITICS ENDS
 
 // FOOTER SECTION ENDS
 
@@ -1007,7 +1113,7 @@ section{
 
 
 
-// media queries
+//  MEDIA QUERIES
 
 @media(max-width:1600px){
 
@@ -1130,6 +1236,32 @@ section{
 @media (max-width: 800px) {
     .gallery .image{
       width: calc(100% / 2);
+    }
+}
+
+@media (max-width:800px) and (max-height:450px){
+    .popup-box-container{
+        width: 80vw;
+        height: 70vh;
+        
+        .icon-container h3{
+            font-size: 1.2rem;
+        }
+
+        .popup-message-container{
+            width: 80vw;
+            height: 80vh;
+
+        }
+   
+
+        .ok-btn{
+            margin: 1rem auto 1rem;
+            width: 30%;
+            height: 5rem;
+            cursor: pointer;
+    
+        }
     }
 }
 
@@ -1434,6 +1566,18 @@ section{
 
     .fair-stands .row__fair-stands .services__activaciones .boxes-container{
         padding-left: 0;
+    }
+
+    .popup-box-container{
+        width: 80vw;
+        height: 50vh;
+        
+
+        .popup-message-container{
+            width: 80vw;
+            height: 50vh;
+        }
+   
     }
 
 }

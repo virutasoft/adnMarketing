@@ -98,7 +98,7 @@ section {
 }
 
 .header .logo .image-logo {
-  width: 15rem;
+  width: 20rem;
 }
 
 .header .navbar a {
@@ -566,6 +566,7 @@ section {
 .services .row .content-2 h3 {
   font-size: 5rem;
   color: var(--green);
+  -webkit-text-stroke: 0.05rem var(--white);
 }
 
 .services .row .content-2 p {
@@ -998,8 +999,9 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(25rem, 1fr) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   gap: 1.5rem;
+  text-align: center;
 }
 
 .footer .box-container .box h3 {
@@ -1502,16 +1504,16 @@ section {
         -ms-flex-flow: column;
             flex-flow: column;
     padding: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box, .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box {
-    width: 22rem;
-    height: 23rem;
+    width: 27rem;
+    height: 28rem;
   }
   .internalCommunication .row__internalCommunication .services__activaciones .boxes-container .box img, .btlPublicity .row__btlPublicity .services__activaciones .boxes-container .box img {
-    width: 17rem;
+    width: 22rem;
   }
   .btlPublicity .row__btlPublicity .services__activaciones .boxes-container {
     -webkit-box-pack: center;

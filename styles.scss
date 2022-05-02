@@ -100,7 +100,7 @@ section{
     .logo{
         margin-right: auto;
         .image-logo{
-            width: 15rem;
+            width: 20rem;
         }
     }
     .navbar{
@@ -545,6 +545,7 @@ section{
             h3{
                 font-size: 5rem;
                 color: var(--green);
+                -webkit-text-stroke: .05rem var(--white);
             }
             p{
                 font-size: 1.5rem;
@@ -928,8 +929,11 @@ section{
 display: -ms-grid;
 display: grid;
 -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
 gap: 1.5rem;
+// background: red;
+text-align: center;
+
 }
 
 .footer .box-container .box h3 {
@@ -1508,17 +1512,17 @@ color: deepskyblue;
         flex-flow: column;
         padding: 0;
        
-        justify-content: space-between;
+        justify-content: center;
         
         
         // background: red;
 
         .box{
-            width: 22rem;
-            height: 23rem;
+            width: 27rem;
+            height: 28rem;
 
             img{
-                width: 17rem;
+                width: 22rem;
             }
         }
 
